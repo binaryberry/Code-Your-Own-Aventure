@@ -14,3 +14,13 @@
 .navbar-default .navbar-text {
   color: #c0c0c0;
 }
+
+/* Index page style */
+
+.profile_photo img{
+  height: 125px;
+}
+
+.progress{
+  margin: 10px 0px;
+}
