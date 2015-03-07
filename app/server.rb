@@ -1,10 +1,7 @@
 require 'sinatra'
-require 'data_mapper'
-require 'rack-flash'
-require 'securerandom'
+require 'sinatra/partial'
 
-	use Rack::Flash
-	use Rack::MethodOverride
+# require_relative 'models/user.rb'
 
 class Fileww < Sinatra::Application
 
