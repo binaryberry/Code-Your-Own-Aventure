@@ -29,4 +29,9 @@ class CodeAdv < Sinatra::Application
     	erb :not_available
     end
 
+    get '/dress' do
+    	session[:name]="Ellie"
+    	@user = User.new(session[:name])
+    	erb :dress
+    end
 end
