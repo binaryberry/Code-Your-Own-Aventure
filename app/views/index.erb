@@ -3,13 +3,13 @@
 
 <h4>Today's story</h4>
 
-<p> Hansel and <%= @user.name%> </p> 
+<a href="/intro"><p> Hansel and <%= @user.name%> </a></p> 
 <div class="meter nostripes">
 	<span style="width: 25%"></span>
 </div>
 
-<p><%= @user.name%>, the Little Red Riding Hood </p>
-<p><%= @user.name%> and the three bears </p>
+<a href="/not_available"><p><%= @user.name%>, the Little Red Riding Hood </a></p>
+<a href="/not_available"><p><%= @user.name%> and the three bears </a></p>
 
 
 
