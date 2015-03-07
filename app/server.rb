@@ -15,6 +15,7 @@ class CodeAdv < Sinatra::Application
     
     get '/' do
     	session[:name]="Ellie"
+    	@user = User.new(session[:name])
         erb :index
     end
 
@@ -23,7 +24,6 @@ class CodeAdv < Sinatra::Application
     end
 
     get '/first_week' do
-    	@user = User.new(session[:name])
     	erb :first_week
     end
 
