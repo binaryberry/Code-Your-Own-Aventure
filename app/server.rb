@@ -1,9 +1,9 @@
 require 'sinatra'
 require 'sinatra/partial'
 
-# require_relative 'models/user.rb'
+require_relative 'models/user.rb'
 
-class Fileww < Sinatra::Application
+class CodeAdv < Sinatra::Application
 
     set :public_folder, File.join(File.dirname(__FILE__), '..', 'public') 
     
