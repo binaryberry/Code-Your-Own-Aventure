@@ -1,9 +1,15 @@
 <p> First <%= @user.name%> tries on all of her dresses.</p>
 
-<p>Ellies tries on the ___ dress.</p>
-<p>Next Ellie tries on the __ dress.</p>
-<p>Last of all Ellie tries on the __ dress.</p>
+<p> Type the dress color you want below! blue, green, white, red </p>
 
-<p> The computer will remember <%= @user.name%>'s dress color by using a variable. Try writing the dress colours!</p>
+<div id="dress-color">
+	<form action="/dress-color" method="POST">
+	<label for="color">var dressColor = </label> <input type="text" name="color">
+	<span><input type="submit" value="Try it on!" class="button"></span>
+	</form>
+</div>
 
-<p><a href="/breadcrumbs">Next</p></a>
+
+<p> The computer will remember <%= @user.name%>'s dress color by using a variable called "dressColor".</p>
+
+<p>If you are happy with this dress colour, click <a href="/breadcrumbs">next</p></a>
