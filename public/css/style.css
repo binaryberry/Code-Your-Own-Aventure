@@ -29,7 +29,21 @@
   margin: 10px 0px;
 }
 
+.btn-primary{
+  background-color: #504a85;
+  background-image: none;
+}
+
 /* Our styles */
+
+body{
+  background-color: #c0c0b8;
+}
+
+a{
+  color: #504a85;
+  font-weight: bold;
+}
 
 .profile_photo img{
   height: 125px;
