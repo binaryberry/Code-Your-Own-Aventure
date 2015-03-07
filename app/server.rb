@@ -19,12 +19,14 @@ class CodeAdv < Sinatra::Application
         erb :index
     end
 
-    post '/first_week' do
-    	redirect to('/first_week')
+    get '/intro' do
+    	session[:name]="Ellie"
+    	@user = User.new(session[:name])
+    	erb :intro
     end
 
-    get '/first_week' do
-    	erb :first_week
+    get '/not_available' do
+    	erb :not_available
     end
 
 end
