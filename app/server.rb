@@ -34,4 +34,20 @@ class CodeAdv < Sinatra::Application
     	@user = User.new(session[:name])
     	erb :dress
     end
+
+    get '/breadcrumbs' do
+    	session[:name]="Ellie"
+    	@user = User.new(session[:name])
+    	erb :breadcrumbs
+    end
+
+    get '/house' do
+    	erb :house
+    end
+
+    get '/results' do
+    	session[:name]="Ellie"
+    	@user = User.new(session[:name])
+    	erb :results
+    end
 end
