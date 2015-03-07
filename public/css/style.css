@@ -1,8 +1,16 @@
-.navbar{
-  height: 125px;
+/* Navbar style */
+
+.navbar-default{
   background: #504a85;
+  color: #c0c0c0;
 }
 
-.navbar-brand img{
-  height: 100px;
+.navbar-brand, navbar-nav li a {
+    line-height: 100px;
+    height: 100px;
+    padding-top: 0;
+}
+
+.navbar-default .navbar-text {
+  color: #c0c0c0;
 }
