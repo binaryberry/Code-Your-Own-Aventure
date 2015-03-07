@@ -1,6 +1,20 @@
-<p>Hansel and <%= @user.name%> are planning to go for a walk in the forest. They love to explore!</p>
+<div class="page-header">
+	<ol class="breadcrumb">
+		<li><h4>Hansel and <%= @user.name%></h4></li>
+		<li class="active">Intro</li>
+	</ol>
+</div>
 
-<p>What are they going to find today?</p>
+<div class="panel panel-default">
+	<div class="panel-body">
+		<p>Hansel and <%= @user.name%> are planning to go for a walk in the forest. They love to explore!</p>
+		<p>What are they going to find today?</p>
+	</div>
+</div>
 
-<a href="/dress">Next<a>
+ <div class="center-block">
+ 	<a class="btn btn-primary btn-lg" href="/dress" role="button">Get started!</a>
+ </div>
+
+
 
