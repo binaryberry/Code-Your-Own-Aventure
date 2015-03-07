@@ -35,6 +35,11 @@ class CodeAdv < Sinatra::Application
     	erb :dress
     end
 
+    post '/dress-color' do
+    	session[:dress]=params[:color]
+    	 # send_file 'app.js'
+    end
+
     get '/breadcrumbs' do
     	session[:name]="Ellie"
     	@user = User.new(session[:name])
