@@ -1,25 +1,37 @@
 <div class="page-header">
 	<ol class="breadcrumb">
 		<li><h1>First <%= @user.name%> tries on all of her dresses.</h1></li>
+		<li><a href="/intro">Intro</a></li>
+
 	</ol>
 </div>
 
 <div class="panel panel-default">
 	<div class="panel-body">
-	<h3>Type the dress color you want below! You can select blue, green, red or white.</h3>
+	<p id="dress_image"><img src="img/avatar_dress_blank.png" height="300" width="250" >
+	<h3>Type the dress color you want below! You can select blue, green, red or white. The computer will remember <%= @user.name%>'s dress color by using a variable called "dressColor".</h3>
 		<form action="/dress_color" method="POST" >
 			<h2><label for="color">var dressColor = </label> <input type="text" name="color_input">
 				<div class="inline">
-	 				<input class="btn btn-primary btn-lg" type="submit" role="button">
+	 				<input class="btn btn-primary btn-lg" type="submit" role="button" value="Try it on!" id="try">
 	 			</div>
  			</h2>
 		</form>
-	<h3> The computer will remember <%= @user.name%>'s dress color by using a variable called "dressColor".</h3>
  	<h1>Are you happy with this dress color?<h1>
 	</div>
+	 <div class="center-block">
+	 	<a class="btn btn-primary btn-lg" href="/breadcrumbs" role="button">Let's go out!</a>
+	 </div>
 </div>
 
- <div class="center-block">
- 	<a class="btn btn-primary btn-lg" href="/breadcrumbs" role="button">Let's go out!</a>
- </div>
+<script>
+$(document).ready(function(){
 
+	$('#try').on('click', function(){
+    	$('#the-image').css('background-color', '#1a5ba6');
+  	});
+
+	$("#ask_the_bear span").text("Try writing the word blue in the box!").css('font-size', "18pt");
+});
+
+</script>

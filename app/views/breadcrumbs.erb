@@ -10,14 +10,14 @@
 
 <div class="panel panel-default">
 	<div class="panel-body">
-		<p>So they don’t lose their way, Hansel and Ellie drop breadcrumbs as they walk.</p>
-		<p>
+		<h3>So they don’t lose their way, Hansel and Ellie drop breadcrumbs as they walk.</h3>
+		<h3>
 		They need <b>1</b> breadcrumb for every <b>5</b> steps they take.<br/>
 		It takes <b>30</b> steps to get to the end of the path.
-		</p><br/>
-		<p><b>If</b> they drop <b><=</b> <input type="text" class="input_game" id="bc_answer_less"/> breadcrumbs <b>then</b> they haven’t got far enough.<img src="/img/green-check-mark.png" id="bc_answer_less_tick" class="tick"/></p>
-		<p><b>If</b> they drop <b>=</b> <input type="text" class="input_game" id="bc_answer_equal"/> breadcrumbs <b>then</b> they get to the house.<img src="/img/green-check-mark.png" id="bc_answer_equal_tick" class="tick"/></p>
-		<p><b>Else</b> they have gone too far.</p>
+		</h3><br/>
+		<h3><b>If</b> they drop <b><=</b> <input type="text" class="input_game" id="bc_answer_less"/> breadcrumbs <b>then</b> they haven’t got far enough.<img src="/img/green-check-mark.png" id="bc_answer_less_tick" class="tick"/></h3>
+		<h3><b>If</b> they drop <b>=</b> <input type="text" class="input_game" id="bc_answer_equal"/> breadcrumbs <b>then</b> they get to the house.<img src="/img/green-check-mark.png" id="bc_answer_equal_tick" class="tick"/></h3>
+		<h3><b>Else</b> they have gone too far.</h3>
 	</div>
 </div>
 
@@ -27,5 +27,11 @@
 <script type = 'text/javascript'>
 	jQuery(document).ready(function(){
 		jQuery("#ask_the_bear span").text("You can win two Honeycombs in this one, good luck!");
+
+		jQuery('#try').on('click', function(){
+	    	$('#the-image').css('background-color', '#1a5ba6');
+	  	});
+
+		jQuery("#ask_the_bear span").text("Do you need help?").css('font-size', "18pt");
 	});
 </script>
