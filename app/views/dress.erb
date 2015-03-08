@@ -2,14 +2,14 @@
 
 <p> Type the dress color you want below! blue, green, white, red </p>
 
-<div id="dress-color">
-	<form action="/dress-color" method="POST">
-	<label for="color">var dressColor = </label> <input type="text" name="color">
+<div id="dress_color">
+	<form action="/dress_color" method="POST" >
+	<label for="color">var dressColor = </label> <input type="text" name="color_input">
 	<span><input type="submit" value="Try it on!" class="button"></span>
 	</form>
 </div>
 
-
 <p> The computer will remember <%= @user.name%>'s dress color by using a variable called "dressColor".</p>
 
 <p>If you are happy with this dress colour, click <a href="/breadcrumbs">next</p></a>
+
