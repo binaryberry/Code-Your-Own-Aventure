@@ -1,24 +1,23 @@
 <div class="page-header">
 	<ol class="breadcrumb">
-		<li><h4>Hansel and <%= @user.name%></h4></li>
-		<li class="active">Intro</li>
+		<li><h1>The story of Hansel and <%= @user.name%></h1></li>
 	</ol>
 </div>
 
 <div class="panel panel-default">
 	<div class="panel-body">
-		<p>Hansel and <%= @user.name%> are planning to go for a walk in the forest. They love to explore!</p>
-		<p>What are they going to find today?</p>
+		<h3>Hansel and <%= @user.name%> are planning to go for a walk in the forest. They love to explore!</h3>
+		<h3>What are they going to find today?</h3>
 	</div>
-</div>
-
  <div class="center-block">
  	<a class="btn btn-primary btn-lg" href="/dress" role="button">Get started!</a>
  </div>
+</div>
+
 
 <script type = 'text/javascript'>
 	jQuery(document).ready(function(){
-		jQuery("#ask_the_bear span").text("Let's get started and try to find all the Honeycombs!");
+		jQuery("#ask_the_bear span").text("Let's try to find all the Honeycombs!").css('font-size', "18pt");
 	});
 </script>
 
