@@ -35,24 +35,32 @@ class CodeAdv < Sinatra::Application
     	erb :dress
     end
 
-    post '/dress-color' do
+    post '/dress_color' do
     	session[:dress]=params[:color]
-    	 # send_file 'app.js'
+    	redirect to('/dress_color')
+    end
+
+    get '/dress_color' do
+    	session[:dress_color]=params[:color_input]
+    	@user = User.new(session[:name], session[:dress_color])
+    	erb :dress_color
     end
 
     get '/breadcrumbs' do
     	session[:name]="Ellie"
-    	@user = User.new(session[:name])
+    	@user = User.new(session[:name], session[:dress_color])
     	erb :breadcrumbs
     end
 
     get '/house' do
+    	session[:name]="Ellie"
+    	@user = User.new(session[:name], session[:dress_color])
     	erb :house
     end
 
     get '/results' do
     	session[:name]="Ellie"
-    	@user = User.new(session[:name])
+    	@user = User.new(session[:name], session[:dress_color])
     	erb :results
     end
 end
