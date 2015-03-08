@@ -70,3 +70,35 @@ a{
 .tick{
   display: none;
 }
+
+#footer .footer_left{
+  float: left;
+}
+
+#footer .footer_right{
+  float: right;
+}
+
+.ask_the_bear img{
+  border: 2px solid #504a85;
+}
+
+.ask_the_bear img:hover{
+  box-shadow: 0px 0px 10px black;  
+}
+
+.bubble { 
+  position: relative;
+  background-color: #eee;
+  margin: 0;
+  padding: 31px;
+  text-align: center;
+  width: 450px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -webkit-box-shadow: 0px 0 3px rgba(0,0,0,0.25);
+  -moz-box-shadow: 0px 0 3px rgba(0,0,0,0.25);
+  box-shadow: 0px 0 3px rgba(0,0,0,0.25);
+  min-height: 84px;
+  margin-right: 15px;
+}
