@@ -73,3 +73,10 @@ a{
 .inline{
   display: inline;
 }
+
+
+#dress_image{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

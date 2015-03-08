@@ -6,20 +6,30 @@
 
 <div class="panel panel-default">
 	<div class="panel-body">
+	<p id="dress_image"><img src="img/avatar_dress_blank.png" height="200" width="100" >
 	<h3>Type the dress color you want below! You can select blue, green, red or white.</h3>
 		<form action="/dress_color" method="POST" >
 			<h2><label for="color">var dressColor = </label> <input type="text" name="color_input">
 				<div class="inline">
-	 				<input class="btn btn-primary btn-lg" type="submit" role="button">
+	 				<input class="btn btn-primary btn-lg" type="submit" role="button" value="Try it on!" id="try">
 	 			</div>
  			</h2>
 		</form>
 	<h3> The computer will remember <%= @user.name%>'s dress color by using a variable called "dressColor".</h3>
  	<h1>Are you happy with this dress color?<h1>
 	</div>
+	 <div class="center-block">
+	 	<a class="btn btn-primary btn-lg" href="/breadcrumbs" role="button">Let's go out!</a>
+	 </div>
 </div>
 
- <div class="center-block">
- 	<a class="btn btn-primary btn-lg" href="/breadcrumbs" role="button">Let's go out!</a>
- </div>
+<script>
+var dressChoice=0;
+$(document).ready(function(){
 
+	$('#try').on('click', function(){
+    	$('#the-image').css('background-color', '#1a5ba6');
+  	});
+
+});
+</script>
