@@ -70,3 +70,6 @@ a{
 .tick{
   display: none;
 }
+.inline{
+  display: inline;
+}
