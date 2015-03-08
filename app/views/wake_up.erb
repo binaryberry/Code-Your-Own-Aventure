@@ -1,0 +1,26 @@
+<div class="page-header">
+	<ol class="breadcrumb">
+		<span class="badge"><img src="/img/honeycomb_rewards.png"/> <span id="n_honeycombs">1</span>/10</span>
+		<li><h4>The story of Hansel and <%= @user.name%></h4></li>
+		<li><a href="/intro">Intro</a></li>
+		<li><a href="/dress">Dress</a></li>
+		<li><a href="/breadcrumbs">Breadcrumbs</a></li>
+		<li class="active">Woke up!</li>
+	</ol>
+</div>
+
+<div class="panel panel-default">
+	<div class="panel-body">
+		<h3>It was a dream!</h3>
+		<h4>Hansel and <%=@user.name%> felt sleep and mum comes to wake them up. It's almost lunch time and they can't go to explore. They missed such a good adventure!</h4>
+		<h5>This is the end of their adventure</h5>
+	</div>
+</div>
+
+<a id="bc_btn_answer" class="btn btn-primary btn-lg" role="button">Create this adventure <span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span></a>
+
+<script type = 'text/javascript'>
+	jQuery(document).ready(function(){
+		jQuery("#ask_the_bear span").text("There are still missing Honeycombs, don´t give up!");
+	});
+</script>

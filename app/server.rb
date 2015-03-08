@@ -63,4 +63,16 @@ class CodeAdv < Sinatra::Application
     	@user = User.new(session[:name], session[:dress_color])
     	erb :results
     end
+
+    get '/get_lost' do
+        session[:name]="Ellie"
+        @user = User.new(session[:name], session[:dress_color])
+        erb :get_lost
+    end
+
+    get '/wake_up' do
+        session[:name]="Ellie"
+        @user = User.new(session[:name], session[:dress_color])
+        erb :wake_up
+    end
 end
