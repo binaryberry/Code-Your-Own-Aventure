@@ -1,32 +1,40 @@
-<p>Hansel and Ellie reach a house covered in candy. They knock on the door to see who lives inside.</p>
 
+<div class="page-header">
+	<ol class="breadcrumb">
+		<span class="badge"><img src="/img/honeycomb_rewards.png"/> <span id="n_honeycombs">1</span>/10</span>
+		<li><h4>The story of Hansel and <%= @user.name%></h4></li>
+		<li><a href="/intro">Intro</a></li>
+		<li><a href="/dress">Dress</a></li>
+		<li><a href="/dress">Breadcrumbs</a></li>
+		<li class="active">House</li>
+	</ol>
+</div>
 
-<img src="/img/door-knocker.jpeg" id="knocker">
+<div class="panel panel-default">
+	<div class="panel-body">
+		<h3>Hansel and Ellie reach a house covered in candy. They knock on the door to see who lives inside</h3>
+		<span id='knocker'><img src="img/house.jpg" width="100%" ></span>
 
+		<h3>Hansel and Ellie have to keep knocking until the door opens.</h3>
+	</div>
+</div>
 
+<script type = 'text/javascript'>
+	jQuery(document).ready(function(){
+		
+		var knocking = 0;
 
+		jQuery("#ask_the_bear span").text("You can win two Honeycombs in this one, good luck!");
 
+		jQuery("#ask_the_bear span").text("Do you need help?").css('font-size', "18pt");
 
+		$('#knocker').click(function(){
+	    	knocking = knocking + 1;
+	    	
+	    	$('#knocker').hide(
 
-
-<p>Hansel and Ellie have to keep knocking until the door opens.</p>
-
-<p><a href="/results">Next</a></p>
-
-<script>
-$(document).ready(function(){
-
-	
-
-	$('#knocker').on('click', function(){
-    	$('#knocker').animate({
-    		opacity: 0.25,
-    		left: "+=50",
-    		height: "toggle"
-  			}, 5000, function() {
-    // Animation complete.
-  		});
+	    		);
+		});
   	});
-
-});
 </script>
+
