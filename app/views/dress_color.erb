@@ -1,21 +1,32 @@
+<p> First <%= @user.name%> tries on all of her dresses.</p>
 
+<p> Type the dress color you want below! blue, green, white, red </p>
+<p id="demo"><img src="/img/dress.jpg" height="150" width="100" >
+	<form action="/dress_color" method="POST" >
+	<label for="color">var dressColor = </label> <input type="text" name="color_input">
+	<span><input type="submit" value="Try it on!" class="button" id="color_input"></span>
+	</form>
+</div>
+
+<p> The computer will remember <%= @user.name%>'s dress color by using a variable called "dressColor".</p>
+
+<p>If you are happy with this dress colour, click <a href="/breadcrumbs">next</p></a>
 
 <script>
+var dressChoice=0;
+$(document).ready(function(){
 
-function Dress() {
-  this.color = 'black';
-}
+	if (dressChoice=0){$('#demo').hide()};
 
-Thermocat.prototype.changeColor = function () {
-  if (this.temperature <= 18) {
-    this.color = 'green';
-  }
-  if (this.temperature >= 18 && this.temperature <= 25) {
-    this.color = 'yellow';
-  }
-  if (this.temperature >= 25) {
-  	this.color = 'red';
-  }
-};
+	$('#color_input').on('click', function(){
+    	$('#demo').show();
+    	dressChoice +=1;
+  });
+	$('#demo').on('change', function(){
+    	$('#demo').show();
+  });
 
+
+});
 </script>
+
