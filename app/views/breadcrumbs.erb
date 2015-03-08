@@ -1,5 +1,6 @@
 <div class="page-header">
 	<ol class="breadcrumb">
+		<span class="badge"><img src="/img/honeycomb_rewards.png"/> <span id="n_honeycombs">1</span>/10</span>
 		<li><h4>Hansel and <%= @user.name%></h4></li>
 		<li><a href="/intro">Intro</a></li>
 		<li><a href="/dress">Dress</a></li>
@@ -20,4 +21,11 @@
 	</div>
 </div>
 
-<button id="bc_btn_answer" class="btn btn-primary btn-lg center-block" type="submit">Throw breadcrumbs!</button>
+<a id="bc_btn_answer" class="btn btn-primary btn-lg" role="button">Throw breadcrumbs!</a>
+<a id="bc_btn_continue" class="btn btn-primary btn-lg" role="button"></a>
+
+<script type = 'text/javascript'>
+	jQuery(document).ready(function(){
+		jQuery("#ask_the_bear span").text("You can win two Honeycombs in this one, good luck!");
+	});
+</script>
