@@ -1,15 +1,25 @@
-<p> First <%= @user.name%> tries on all of her dresses.</p>
-
-<p> Type the dress color you want below! blue, green, white, red </p>
-
-<div id="dress_color">
-	<form action="/dress_color" method="POST" >
-	<label for="color">var dressColor = </label> <input type="text" name="color_input">
-	<span><input type="submit" value="Try it on!" class="button"></span>
-	</form>
+<div class="page-header">
+	<ol class="breadcrumb">
+		<li><h1>First <%= @user.name%> tries on all of her dresses.</h1></li>
+	</ol>
 </div>
 
-<p> The computer will remember <%= @user.name%>'s dress color by using a variable called "dressColor".</p>
+<div class="panel panel-default">
+	<div class="panel-body">
+	<h3>Type the dress color you want below! You can select blue, green, red or white.</h3>
+		<form action="/dress_color" method="POST" >
+			<h2><label for="color">var dressColor = </label> <input type="text" name="color_input">
+				<div class="inline">
+	 				<input class="btn btn-primary btn-lg" type="submit" role="button">
+	 			</div>
+ 			</h2>
+		</form>
+	<h3> The computer will remember <%= @user.name%>'s dress color by using a variable called "dressColor".</h3>
+ 	<h1>Are you happy with this dress color?<h1>
+	</div>
+</div>
 
-<p>If you are happy with this dress colour, click <a href="/breadcrumbs">next</p></a>
+ <div class="center-block">
+ 	<a class="btn btn-primary btn-lg" href="/breadcrumbs" role="button">Let's go out!</a>
+ </div>
 

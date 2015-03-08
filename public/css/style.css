@@ -102,3 +102,7 @@ a{
   min-height: 84px;
   margin-right: 15px;
 }
+
+.inline{
+  display: inline;
+}
