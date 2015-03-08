@@ -5,7 +5,9 @@ jQuery(document).ready(function(){
 
 	var n_honeycombs_start = parseInt(jQuery("#n_honeycombs").text());
 
-	jQuery("bc_btn_continue").click(function(e){
+	jQuery("#bc_btn_continue").hide();
+
+	jQuery(document).on('click', '#bc_btn_continue', function(e){
 		console.log("FIRING");
 		e.preventDefault();
 
@@ -24,8 +26,6 @@ jQuery(document).ready(function(){
 			return;
 		}
 	});
-
-	jQuery("#bc_btn_continue").hide();
 
 	jQuery("#bc_btn_answer").click(function(e){
 		e.preventDefault();
