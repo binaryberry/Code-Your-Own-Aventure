@@ -19,7 +19,7 @@ jQuery("#bc_btn_answer").click(function(e){
 	jQuery("#bc_answer_equal").removeClass("has-success");
 	jQuery("#bc_answer_equal").removeClass("has-error");
 
-	if (parseInt(answer_less) == 6){
+	if (parseInt(answer_less) == 5){
 		jQuery("#bc_answer_less").addClass("has-success");
 		jQuery("#bc_answer_less_tick").show();
 		correct_answer++;

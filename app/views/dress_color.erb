@@ -1,7 +1,7 @@
 <p> First <%= @user.name%> tries on all of her dresses.</p>
 
 <p> Type the dress color you want below! blue, green, white, red </p>
-<p id="demo"><img src="/img/dress.jpg" height="150" width="100" >
+<p id="dress_image"><img src="/img/dress.jpg" height="150" width="100" >
 	<form action="/dress_color" method="POST" >
 	<label for="color">var dressColor = </label> <input type="text" name="color_input">
 	<span><input type="submit" value="Try it on!" class="button" id="color_input"></span>
@@ -16,16 +16,12 @@
 var dressChoice=0;
 $(document).ready(function(){
 
-	if (dressChoice=0){$('#demo').hide()};
+	if (dressChoice=0){$('#dress_image').hide()};
 
 	$('#color_input').on('click', function(){
-    	$('#demo').show();
+    	$('#dress_image').show();
     	dressChoice +=1;
-  });
-	$('#demo').on('change', function(){
-    	$('#demo').show();
-  });
-
+  	});
 
 });
 </script>

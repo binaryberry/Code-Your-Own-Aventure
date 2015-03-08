@@ -1,7 +1,7 @@
 <p>Hansel and Ellie reach a house covered in candy. They knock on the door to see who lives inside.</p>
 
 
-
+<img src="/img/door-knocker.jpeg" id="knocker">
 
 
 
@@ -12,3 +12,21 @@
 <p>Hansel and Ellie have to keep knocking until the door opens.</p>
 
 <p><a href="/results">Next</a></p>
+
+<script>
+$(document).ready(function(){
+
+	
+
+	$('#knocker').on('click', function(){
+    	$('#knocker').animate({
+    		opacity: 0.25,
+    		left: "+=50",
+    		height: "toggle"
+  			}, 5000, function() {
+    // Animation complete.
+  		});
+  	});
+
+});
+</script>
