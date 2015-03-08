@@ -29,9 +29,44 @@
   margin: 10px 0px;
 }
 
+.btn-primary{
+  background-color: #504a85;
+  background-image: none;
+}
+
 /* Our styles */
+
+body{
+  background-image: url("../img/bg.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+a{
+  color: #504a85;
+  font-weight: bold;
+}
 
 .profile_photo img{
   height: 125px;
 }
 
+.input_game{
+  width: 100px;
+}
+
+.input_game.has-success{
+  border-color: green;
+  outline: 0 none;
+}
+
+.input_game.has-error{
+  border-color: red;
+  outline: 0 none;
+}
+
+.tick{
+  display: none;
+}
