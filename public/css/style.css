@@ -37,7 +37,11 @@
 /* Our styles */
 
 body{
-  background-color: #c0c0b8;
+  background-image: url("../img/bg.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 a{
@@ -49,3 +53,20 @@ a{
   height: 125px;
 }
 
+.input_game{
+  width: 100px;
+}
+
+.input_game.has-success{
+  border-color: green;
+  outline: 0 none;
+}
+
+.input_game.has-error{
+  border-color: red;
+  outline: 0 none;
+}
+
+.tick{
+  display: none;
+}
