@@ -27,6 +27,7 @@
 
 .progress{
   margin: 10px 0px;
+  width: 90%;
 }
 
 .btn-primary{
@@ -107,6 +108,12 @@ a{
   display: inline;
 }
 
+.badge{
+  background-color: #eee;
+  color: #000;
+  line-height: 40px;
+  font-size: 25px;
+}
 
 #dress_image{
   display: block;
